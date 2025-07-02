@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forkify Recipe Search</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <i class="fa-solid fa-utensils"></i>
+        <span>forkify</span>
+      </div>
+      <form id="searchForm" class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search over 1,000,000 recipes..." autocomplete="off"/>
+        <button type="submit" class="btn-search"><i class="fa fa-search"></i> SEARCH</button>
+      </form>
+      <div class="nav">
+        <button id="addRecipeBtn" class="nav-btn"><i class="fa fa-plus"></i> ADD RECIPE</button>
+        <button id="bookmarkBtn" class="nav-btn"><i class="fa fa-bookmark"></i> BOOKMARKS</button>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="sidebar" id="resultsList"></aside>
+      <section class="recipe-details" id="recipeDetails">
+        <div class="welcome">
+          <span class="smile">😊</span>
+          <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- Add Recipe Modal -->
+  <div id="addRecipeModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeAddRecipe">&times;</span>
+      <h2>Add New Recipe</h2>
+      <form id="addRecipeForm">
+        <input type="text" id="recipeTitle" placeholder="Recipe Title" required>
+        <input type="text" id="recipePublisher" placeholder="Publisher" required>
+        <input type="text" id="recipeImage" placeholder="Image URL" required>
+        <textarea id="recipeIngredients" placeholder="Ingredients (comma separated)" required></textarea>
+        <button type="submit" class="btn-modal">Add Recipe</button>
+      </form>
+    </div>
+  </div>
+  <!-- Bookmarks Modal -->
+  <div id="bookmarksModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeBookmarks">&times;</span>
+      <h2>Your Bookmarked Recipes</h2>
+      <div id="bookmarksList"></div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer text-center text-white">
+    <div class="footer-container">
+      <p class="mb-3">
+        Developed by <strong>Syed Haider Abbas</strong> &copy; 2025 | Recipe Application
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com/haider14-9abbaas" target="_blank" class="icon-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/syed-haider-abbas-zaidi-132525215/" target="_blank" class="icon-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
