@@ -33,7 +33,7 @@ The interface is inspired by the [Forkify Project](https://forkify-api.herokuapp
 
 ## 🧑‍💻 Developed By
 
-**Syed Haider Abbas**
+**Muhammad Sufyan Ayaz**
 
 ---
 
