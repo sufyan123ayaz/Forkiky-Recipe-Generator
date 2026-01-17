@@ -69,9 +69,4 @@ Feel free to [open an issue](https://github.com/haider14-9abbaas/forkify-app/iss
 
 ---
 
-## 🛠️ Getting Started
 
-### 1. **Clone the repository**
-
-```bash
-git clone https://github.com/haider14-9abbaas/forkify-app.git
